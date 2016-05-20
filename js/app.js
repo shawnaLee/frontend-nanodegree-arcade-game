@@ -1,11 +1,17 @@
+/* App.js
+ * This file creates the player and enemy objects and functions,
+ * and then instantiates the objects. There is also a new Game
+ * and create Game function.
+ */
+
+'use strict';
 
 /*
- * game over function
+ * Game Over function
  */
 var Game = function() {
     this.gameOver = false;     
 };
-
 
 
 /* 
@@ -82,16 +88,16 @@ Player.prototype.update = function(dt) {
     if (this.y == -13) {
         
         // add one to the score
-        player.score++;
-        document.getElementById('score').innerHTML = 'Score: ' + player.score;
+        this.score++;
+        document.getElementById('score').innerHTML = 'Score: ' + this.score;
 
         // check to see if player won the game and if so change header message
-        if (player.score === 5) {
+        if (this.score === 5) {
             document.getElementById('title').innerHTML = 'YOU WIN!';
             document.getElementById('instructions').innerHTML = 'Click refresh on your browser to play again.';
             game.gameOver = true;                
         } else {
-            player.reset();
+            this.reset();
         }
     }        
 };
