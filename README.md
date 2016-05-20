@@ -8,6 +8,6 @@ Use the arrow keys to move the player up to the water 5 times without hitting an
 
 ## How to Run
 
-1. Visit my Github page [here](http://shawnalee.github.io/frontend-nanodegree-arcade-game/) *OR* download the files and open index.html in a browser. 
+1. Visit my Github page [here](http://shawnalee.github.io/frontend-nanodegree-arcade-game/) **OR** download the files and open index.html in a browser. 
 
 2. Enjoy the app!
