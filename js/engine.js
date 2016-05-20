@@ -45,8 +45,10 @@ var Engine = (function(global) {
         /* Call our update/render functions, pass along the time delta to
          * our update function since it may be used for smooth animation.
          */
-        update(dt);
-        render();
+        if (game.gameOver == false) {
+            update(dt);
+            render();
+        };
 
         /* Set our lastTime variable which is used to determine the time delta
          * for the next time this function is called.
@@ -80,7 +82,7 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        //checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the
@@ -109,10 +111,10 @@ var Engine = (function(global) {
          */
         var rowImages = [
                 'images/water-block.png',   // Top row is water
-                'images/stone-block.png',   // Row 1 of 3 of stone
-                'images/stone-block.png',   // Row 2 of 3 of stone
-                'images/stone-block.png',   // Row 3 of 3 of stone
-                'images/grass-block.png',   // Row 1 of 2 of grass
+                'images/stone-block.png',   // Row 1 of 4 of stone
+                'images/stone-block.png',   // Row 2 of 4 of stone
+                'images/stone-block.png',   // Row 3 of 4 of stone
+                'images/stone-block.png',   // Row 4 of 4 of stone
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
             numRows = 6,
