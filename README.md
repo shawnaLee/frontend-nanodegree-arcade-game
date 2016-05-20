@@ -1,6 +1,9 @@
-frontend-nanodegree-arcade-game
+# I Hate Bugs!
 ===============================
 
-Students should use this [rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535) for self-checking their submission.
+This Frogger-style game is located here. It is written in JavaScript, using the HTML5 Canvas.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## How to Play
+
+Use the arrow keys to move the player up to the water 5 times without hitting any bugs!
+
